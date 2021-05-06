@@ -1,17 +1,20 @@
 <template>
-  <view class="container">
-
-    <text>Title</text>
-    
-    <Feed/>
-    
-  </view>
+  <nb-container class="home">
+    <header/>
+    <nav-bar/>
+  </nb-container>
 </template>
 
 <script>
-import Feed from "./components/Feed";
+import Vue from "vue-native-core";
+import NavBar from './components/NavBar';
+import Header from './components/Header';
+import { VueNativeBase } from "native-base"
+import { Ionicons } from "@expo/vector-icons";
+Vue.use(VueNativeBase);
+Vue.component("ionicons", Ionicons);
 export default {
-  components: { Feed },
+  components : {NavBar,Header},
   data() {
     return {
       message: "Hello World"
