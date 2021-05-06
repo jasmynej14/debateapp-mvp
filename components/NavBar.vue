@@ -2,12 +2,12 @@
     <nb-footer>
       <nb-footer-tab>
         <nb-button>
-          <nb-icon name='home' />
+          <nb-icon type="AntDesign" name='home' />
         </nb-button> 
       </nb-footer-tab>
       <nb-footer-tab>
         <nb-button>
-          <nb-icon name="md-person-outline"/>
+          <nb-icon type="AntDesign" name="user"/>
         </nb-button>
       </nb-footer-tab>
       <nb-footer-tab>
@@ -20,7 +20,7 @@
 
 <script>
     export default{
-        
+
     }
 </script>
 
